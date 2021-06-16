@@ -5,15 +5,43 @@ date:   2021-06-14 20:26:44 +0200
 categories: jekyll update
 ---
 
-# Former projects
+# Graphical Deep Learning Editor in the Browser
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wWIqVlIU-r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+An online platform for designing, training and sharing AI models.
+The user can design the network architecture without any code. Just in the editor.
+When 
 
-# Charlie Debugger
+![](https://raw.githubusercontent.com/lochbrunner/open-go-bot/master/docs/assets/screenshot-mnist.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bC8TMuqG-oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[github link](https://github.com/lochbrunner/open-go-bot)
+
+## Used Languages, Tools and Libraries
+
+* [Typescript](https://www.typescriptlang.org/)
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [TensorFlow.js](https://www.tensorflow.org/js)
 
 # Graph Extension VS Code
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v=TJ5P_vkUihw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TJ5P_vkUihw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+# Charlie Debugger
+
+This project contains a compiler, interpreter and debug adapter for VS Code of the programming language Charlie, which is a subset of C.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bC8TMuqG-oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[github link](https://github.com/lochbrunner/charlie)
+
+## Used Languages, Tools and Libraries
+
+* [Typescript](https://www.typescriptlang.org/)
+* C++
+
+# Older projects
+
+Projects until 2015
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wWIqVlIU-r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
