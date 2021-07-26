@@ -5,62 +5,134 @@ date:   2021-06-14 20:26:44 +0200
 categories: jekyll update
 ---
 
-## Graphical Deep Learning Editor in the Browser
+<style type="text/css">
+  .tag:visited, .tag {
+    border: 1px solid #3b8fff;;
+    border-radius: 6px;
+    padding: 3px 5px 1px;
+    color: #fff;
+    background-color: #1756a9;
+    font-size: small;
+  }
+  .tag:hover{
+      color: #eee;
+      text-decoration: none;
+  }
+  
+</style>
+
+## Graphical Architecture Editor in the Browser
 
 An online platform for designing, training and sharing AI models.
-The user can design the network architecture without any code. Just in the editor.
-When 
 
-[![](https://raw.githubusercontent.com/lochbrunner/open-go-bot/master/docs/assets/screenshot-mnist.png)](https://raw.githubusercontent.com/lochbrunner/open-go-bot/master/docs/assets/screenshot-mnist.png)
+[![](https://raw.githubusercontent.com/lochbrunner/open-go-bot/master/docs/assets/mnist/mnist.gif)](https://raw.githubusercontent.com/lochbrunner/open-go-bot/master/docs/assets/mnist/mnist.gif)
 
-[github link](https://github.com/lochbrunner/open-go-bot)
+The user can design the network architecture without any code, just in the editor.
+When painting on the canvas, the hidden neuron states are displayed live.
 
-### Used Languages, Tools and Libraries
+View the code on [github](https://github.com/lochbrunner/open-go-bot).
 
-* [Typescript](https://www.typescriptlang.org/)
-* [React](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
-* [TensorFlow.js](https://www.tensorflow.org/js)
+
+<a class="tag" href="https://www.typescriptlang.org">Typescript</a>
+<a class="tag" href="https://reactjs.org">React</a>
+<a class="tag" href="https://redux.js.org">Redux</a>
+<a class="tag" href="https://www.tensorflow.org/js">TensorFlow.js</a>
 
 ## Graph Extension VS Code
 
+An extension to display directed interactive graphs directly in VS Code.
+
 <iframe width="784" height="441" src="https://www.youtube.com/embed/TJ5P_vkUihw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Used Languages, Tools and Libraries
+For a private project, the massive amount of graphs is stored in a binary file.
+As the core elements in that project are written in Rust, the binary can only be loaded by a rust module.
+This extension uses Javascript bindings to load the file and stores an index of the graph in an SQLite database.
+Following a master-detail architecture, with an infinity scroll, the user can easily query specific graphs and visualize them just in VS Code by right-clicking on the file.
 
-* [Typescript](https://www.typescriptlang.org/)
-* [Rust](https://www.rust-lang.org/)
-* [sqlite](https://www.sqlite.org/index.html)
+<a class="tag" href="https://www.typescriptlang.org">Typescript</a>
+<a class="tag" href="https://www.rust-lang.org/">Rust</a>
+<a class="tag" href="https://www.sqlite.org/index.html">sqlite</a>
 
 ## Charlie Debugger
 
-This project contains a compiler, interpreter and debug adapter for VS Code of the programming language Charlie, which is a subset of C.
+This project contains a compiler, interpreter, and debug adapter for VS Code of the programming language Charlie, a subset of C.
 
 <iframe width="784" height="441" src="https://www.youtube.com/embed/bC8TMuqG-oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[github link](https://github.com/lochbrunner/charlie)
+For the sake of learning, all components are written from scratch without any third-party libraries. (Except the VS Code extension)
+The compiler parses the source code and dumps the corresponding byte-code.
+The interpreter reading that byte-code can launch a TCP socket to which the VS Code debugging extension can connect. 
 
-### Used Languages, Tools and Libraries
+View the code on [github](https://github.com/lochbrunner/charlie)
 
-* [Typescript](https://www.typescriptlang.org/)
-* C++
+<a class="tag" href="https://www.typescriptlang.org">Typescript</a>
+<a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
 
-## Older projects
-
-Projects until 2015
+## Former Projects (before 2015)
 
 <iframe width="784" height="441" src="https://www.youtube.com/embed/wWIqVlIU-r8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Used Languages, Tools and Libraries
 
-* [Typescript](https://www.typescriptlang.org/)
-* C++
-* OpenGL
-* CUDA
-* Direct3d
-* Qt
-* React
-* Angular
-* C#
-* asp.net
-* Win32 API
+### Soccer playing Robot
+
+After playing around with Java, the first serious project I joined was a soccer-playing robot.
+Our team built up the hardware and software.
+We fused the input of different sensors as ultrasonic, IR sensor and others.
+
+<a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+
+### Interactive 3D Physics simulation
+
+The propaedeutic project during school was an interactive physics simulation capable of simulating elemental electromagnetic forces.
+A challenging part was the manipulator, which allows the user to edit all objects in the 3D scene.
+
+<a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+<a class="tag" href="https://docs.microsoft.com/en-us/windows/win32/direct3d">Direct3d</a>
+<a class="tag" href="https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list">Win32 API</a>
+
+### 3D Modeling tool and Ray-Tracer
+
+Inspired by the 3d modeling tool Maya and its render engine, this project let the user create and manipulate polygons.
+Animations were calculated with the scripting engine of Lua.
+A ray-tracer was able to load the files and render the scenes.
+Because of the lack of internet, the only third-party library was for loading XML files.
+
+<a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+<a class="tag" href="https://www.opengl.org">OpenGL</a>
+<a class="tag" href="https://www.lua.org/">Lua</a>
+<a class="tag" href="https://www.qt.io">Qt</a>
+
+### Physical Simulation using CUDA
+
+In the study, I utilized the GPU in order to calculate physical fields in a larger scale. 
+
+<a class="tag" href="https://developer.nvidia.com/cuda-zone">CUDA</a>
+<a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+<a class="tag" href="https://www.opengl.org">OpenGL</a>
+
+### Platform for Semantic Knowledge Management
+
+Starting with a small algorithm that found solutions in propositional calculus, I build an online platform where users can store their latex documents.
+Besides a live LaTeX editor, there were some additional LaTeX commands to structure the document's semantic.
+With this, a semantic linkage between documents was possible. 
+
+<a class="tag" href="https://www.typescriptlang.org">Typescript</a>
+<a class="tag" href="https://reactjs.org">React</a>
+<a class="tag" href="https://angular.io/">Angular</a>
+<a class="tag" href="https://docs.microsoft.com/en-us/dotnet/csharp">C#</a>
+<a class="tag" href="https://dotnet.microsoft.com/apps/aspnet">asp.net</a>
+
+### Technologies used in other Projects
+
+Several other projects are not listed here.
+
+<a class="tag" href="https://www.java.com">Java</a>
+<a class="tag" href="https://www.python.org">Python</a>
+<a class="tag" href="https://en.wikipedia.org/wiki/Prolog">Prolog</a>
+<a class="tag" href="https://www.lua.org">Lua</a>
+<a class="tag" href="https://golang.org">Go</a>
+<a class="tag" href="https://www.blender.org">Blender</a>
+<a class="tag" href="https://www.autodesk.com/products/maya/overview">Maya</a>
+<a class="tag" href="https://www.mathworks.com/products/matlab.html">Matlab</a>
+<a class="tag" href="https://fortran-lang.org">Fortran</a>
+<a class="tag" href="https://www.wolfram.com/mathematica">Mathematica</a>
