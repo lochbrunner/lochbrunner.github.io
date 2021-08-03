@@ -34,10 +34,11 @@ The approach in this project works as follow:
 2. Feed in the training samples and store the index of the neurons with the strongest activation per class. (One-shot learning)
 3. To predict a class, calculate the connection group of the neurons that fires most.
 
+View the code on [github](https://github.com/lochbrunner/hippocampus).
+
 <a class="tag" href="https://pytorch.org">PyTorch</a>
 <a class="tag" href="https://www.python.org">Python</a>
-
-View the code on [github](https://github.com/lochbrunner/hippocampus).
+<br/><br/>
 
 ## Editor for Neural Network Architectures
 
@@ -47,7 +48,8 @@ An online platform for designing, training and sharing AI models.
 
 The user can design the network architecture without any code, just in the editor.
 When painting on the canvas, the hidden neuron states are displayed live.
-Go to the [demo]().
+
+Try it at [lochbrunner.github.io/demos/social-ai](https://lochbrunner.github.io/demos/social-ai/#/scenario/mnist).
 
 View the code on [github](https://github.com/lochbrunner/open-go-bot).
 
@@ -56,6 +58,27 @@ View the code on [github](https://github.com/lochbrunner/open-go-bot).
 <a class="tag" href="https://reactjs.org">React</a>
 <a class="tag" href="https://redux.js.org">Redux</a>
 <a class="tag" href="https://www.tensorflow.org/js">TensorFlow.js</a>
+<br/><br/>
+
+## Present IO
+
+Online SVG Editor with the potential to host your presentations.
+
+[![](https://raw.githubusercontent.com/lochbrunner/present.io/master/docs/present-io-screenshot.png)](https://raw.githubusercontent.com/lochbrunner/present.io/master/docs/present-io-screenshot.png)
+
+This project is currently a simple and easy-to-use SVG editor which runs totally in the browser.
+SVG is a very flexible image format with all high-level features one can wish. Therefore, it is not a big challenge to create an interactive UI using Material UI and Redux.
+Later, animation features will be added to create excellent presentations without installing any software on your local machines.
+
+Try it at [lochbrunner.github.io/present.io](https://lochbrunner.github.io/present.io)
+
+View the code on [github](https://github.com/lochbrunner/present.io).
+
+<a class="tag" href="https://www.typescriptlang.org">Typescript</a>
+<a class="tag" href="https://reactjs.org">React</a>
+<a class="tag" href="https://redux.js.org">Redux</a>
+<a class="tag" href="https://material-ui.com">Material UI</a>
+<br/><br/>
 
 ## Graph Extension for VS Code
 
@@ -71,6 +94,7 @@ Following a master-detail architecture, with an infinity scroll, the user can ea
 <a class="tag" href="https://www.typescriptlang.org">Typescript</a>
 <a class="tag" href="https://www.rust-lang.org/">Rust</a>
 <a class="tag" href="https://www.sqlite.org/index.html">sqlite</a>
+<br/><br/>
 
 ## Charlie Debugger
 
@@ -86,6 +110,7 @@ View the code on [github](https://github.com/lochbrunner/charlie)
 
 <a class="tag" href="https://www.typescriptlang.org">Typescript</a>
 <a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+<br/><br/>
 
 ## Former Projects (before 2015)
 
@@ -145,6 +170,7 @@ With this, a semantic linkage between documents was possible.
 
 Several other projects are not listed here.
 
+<a class="tag" href="https://github.com/google/jax">JAX</a>
 <a class="tag" href="https://www.java.com">Java</a>
 <a class="tag" href="https://en.wikipedia.org/wiki/Prolog">Prolog</a>
 <a class="tag" href="https://www.lua.org">Lua</a>
