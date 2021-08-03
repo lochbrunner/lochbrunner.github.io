@@ -21,6 +21,34 @@ categories: jekyll update
   
 </style>
 
+## Rule based Symbolic Reasoning
+
+In recent years, globalization has become an increasingly prominent topic.
+A novel approach based on rule applications in an RL setup solves one of the most urgent problems and could be the basis of a reliable and robust algebra system.
+
+In school, we learn simple rules to solve simple algebraic problems.
+These provide us several ways to the solution:
+
+{:refdef: style="text-align: center;"}
+![](/assets/screenshot-symbolic-reasoning-simple.small.png)
+{: refdef}
+
+But at some point, there are too many ways to keep track of them.
+We need a policy to handle them.
+
+<!-- {:refdef: style="text-align: center;"}
+![](/assets/screenshot-symbolic-reasoning-complex.small.png)
+{: refdef} -->
+
+As this project is not published yet, the description here must not contain that many details.
+
+<a class="tag" href="https://pytorch.org">PyTorch</a>
+<a class="tag" href="https://www.python.org">Python</a>
+<a class="tag" href="https://www.rust-lang.org/">Rust</a>
+<a class="tag" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>
+<a class="tag" href="https://developer.nvidia.com/cuda-zone">CUDA</a>
+<br/><br/>
+
 ## Image Classification without Gradient Descent
 
 [![](https://raw.githubusercontent.com/lochbrunner/hippocampus/master/docs/mnist.gif)](https://raw.githubusercontent.com/lochbrunner/hippocampus/master/docs/mnist.gif)
