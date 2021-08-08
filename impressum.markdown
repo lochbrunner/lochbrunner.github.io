@@ -7,8 +7,8 @@ permalink: /impressum/
 Angaben gemäß § 5 TMG
 
 Matthias Lochbrunner  
-Forststraße 198  
-70193 Stuttgart  
+Bassermannstraße 11
+70563 Stuttgart
 
 ## Kontakt
 

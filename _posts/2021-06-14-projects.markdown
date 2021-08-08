@@ -23,14 +23,14 @@ categories: jekyll update
 
 ## Rule based Symbolic Reasoning
 
-In recent years, globalization has become an increasingly prominent topic.
+In recent years, symbolic reasoning has become an increasingly prominent topic.
 A novel approach based on rule applications in an RL setup solves one of the most urgent problems and could be the basis of a reliable and robust algebra system.
 
 In school, we learn simple rules to solve simple algebraic problems.
 These provide us several ways to the solution:
 
 {:refdef: style="text-align: center;"}
-![](/assets/screenshot-symbolic-reasoning-simple.small.png)
+[![](/assets/symbolic-reasoning.gif)](/assets/symbolic-reasoning.gif)
 {: refdef}
 
 But at some point, there are too many ways to keep track of them.
@@ -92,7 +92,7 @@ View the code on [github](https://github.com/lochbrunner/open-go-bot).
 
 Online SVG Editor with the potential to host your presentations.
 
-[![](https://raw.githubusercontent.com/lochbrunner/present.io/master/docs/present-io-screenshot.png)](https://raw.githubusercontent.com/lochbrunner/present.io/master/docs/present-io-screenshot.png)
+[![](/assets/present.io.fast.gif)](/assets/present.io.fast.gif)
 
 This project is currently a simple and easy-to-use SVG editor which runs totally in the browser.
 SVG is a very flexible image format with all high-level features one can wish. Therefore, it is not a big challenge to create an interactive UI using Material UI and Redux.
