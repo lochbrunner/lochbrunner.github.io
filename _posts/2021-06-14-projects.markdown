@@ -9,19 +9,20 @@ categories: jekyll update
   .tag:visited, .tag {
     border: 1px solid #3b8fff;;
     border-radius: 6px;
-    padding: 3px 5px 2px;
-    color: #fff;
-    background-color: #1756a9;
+    padding: 1px 5px 2px;
+    font-weight: 500;
+    color: #3a5577;
+    background-color: #d8e9ff;
     font-size: small;
   }
   .tag:hover{
-      color: #eee;
+      color:rgb(17, 61, 116);
       text-decoration: none;
   }
   
 </style>
 
-## Rule based Symbolic Reasoning
+## Rule based Symbolic Reasoning - 2021
 
 In recent years, symbolic reasoning has become an increasingly prominent topic.
 A novel approach based on rule applications in an RL setup solves one of the most urgent problems and could be the basis of a reliable and robust algebra system.
@@ -49,7 +50,7 @@ As this project is not published yet, the description here must not contain that
 <a class="tag" href="https://developer.nvidia.com/cuda-zone">CUDA</a>
 <br/><br/>
 
-## Image Classification without Gradient Descent
+## Image Classification without Gradient Descent - 2021
 
 [![](https://raw.githubusercontent.com/lochbrunner/hippocampus/master/docs/mnist.gif)](https://raw.githubusercontent.com/lochbrunner/hippocampus/master/docs/mnist.gif)
 
@@ -68,7 +69,7 @@ View the code on [github](https://github.com/lochbrunner/hippocampus).
 <a class="tag" href="https://www.python.org">Python</a>
 <br/><br/>
 
-## Editor for Neural Network Architectures
+## Editor for Neural Network Architectures - 2018
 
 An online platform for designing, training and sharing AI models.
 
@@ -88,7 +89,7 @@ View the code on [github](https://github.com/lochbrunner/open-go-bot).
 <a class="tag" href="https://www.tensorflow.org/js">TensorFlow.js</a>
 <br/><br/>
 
-## Present IO
+## Present IO - 2021
 
 Online SVG Editor with the potential to host your presentations.
 
@@ -108,7 +109,7 @@ View the code on [github](https://github.com/lochbrunner/present.io).
 <a class="tag" href="https://material-ui.com">Material UI</a>
 <br/><br/>
 
-## Graph Extension for VS Code
+## Graph Extension for VS Code - 2021
 
 An extension to display directed interactive graphs directly in VS Code.
 
@@ -124,7 +125,7 @@ Following a master-detail architecture, with an infinity scroll, the user can ea
 <a class="tag" href="https://www.sqlite.org/index.html">sqlite</a>
 <br/><br/>
 
-## Charlie Debugger
+## Charlie Debugger - 2018
 
 This project contains a compiler, interpreter, and debug adapter for VS Code of the programming language Charlie, a subset of C.
 
