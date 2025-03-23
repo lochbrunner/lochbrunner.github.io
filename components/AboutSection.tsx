@@ -37,7 +37,7 @@ const AboutSection = () => {
               style={{ textAlign: 'center' }}
             >
               <Avatar
-                src="/images/profile.jpg"
+                src="/images/placeholder.jpg"
                 alt="Profile Picture"
                 sx={{
                   width: { xs: 200, md: 300 },

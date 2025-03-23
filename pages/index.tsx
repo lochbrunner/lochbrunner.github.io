@@ -1,11 +1,14 @@
 import { useRef } from 'react';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
-import HeroSection from '@/components/HeroSection';
-import ProjectsGrid from '@/components/ProjectsGrid';
-import AboutSection from '@/components/AboutSection';
-import ContactSection from '@/components/ContactSection';
+import dynamic from 'next/dynamic';
 import { projects } from '../data/projects';
+
+// Use dynamic imports with SSR disabled to avoid hydration issues with animations
+const HeroSection = dynamic(() => import('@/components/HeroSection'), { ssr: false });
+const ProjectsList = dynamic(() => import('@/components/ProjectsList'), { ssr: false });
+const AboutSection = dynamic(() => import('@/components/AboutSection'), { ssr: false });
+const ContactSection = dynamic(() => import('@/components/ContactSection'), { ssr: false });
 
 export default function Home() {
   return (
@@ -19,7 +22,7 @@ export default function Home() {
       
       <Layout>
         <HeroSection />
-        <ProjectsGrid projects={projects} />
+        <ProjectsList projects={projects} />
         <AboutSection />
         <ContactSection />
       </Layout>
