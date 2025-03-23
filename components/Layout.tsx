@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { Box, Container } from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import Header from './Header';
 import Footer from './Footer';
 import { motion } from 'framer-motion';

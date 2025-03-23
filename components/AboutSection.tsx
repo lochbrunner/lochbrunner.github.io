@@ -1,4 +1,10 @@
-import { Box, Container, Grid, Typography, Avatar, Chip, Paper } from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import Chip from '@mui/material/Chip';
+import Paper from '@mui/material/Paper';
 import { motion } from 'framer-motion';
 
 const skills = [

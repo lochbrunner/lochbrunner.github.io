@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Box, Typography, Button, Container, Grid, useTheme } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import { useTheme } from '@mui/material/styles';
 import { motion } from 'framer-motion';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import CodeIcon from '@mui/icons-material/Code';

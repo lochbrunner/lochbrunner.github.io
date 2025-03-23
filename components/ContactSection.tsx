@@ -1,16 +1,14 @@
 import { useState } from 'react';
-import {
-  Box,
-  Container,
-  Typography,
-  Grid,
-  TextField,
-  Button,
-  Paper,
-  Snackbar,
-  Alert,
-  Link,
-} from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
+import Link from '@mui/material/Link';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
