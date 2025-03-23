@@ -36,7 +36,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
 
   return (
     <Box component="section" id="projects" sx={{ py: { xs: 8, md: 12 } }}>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -189,7 +189,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                         </Box>
                       </Grid>
 
-                      <Grid item xs={12} md={6} sx={{ p: 3, pt: 0 }}>
+                      <Grid item xs={12} md={7} sx={{ p: 3, pt: 0 }}>
                         <Box sx={{ position: 'relative' }}>
                           <motion.div
                             initial={{ opacity: 0, scale: 0.95, y: 10 }}
@@ -210,7 +210,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                             >
                               <CardMedia
                                 component="img"
-                                height="300"
+                                height="400"
                                 image={project.images[0] || '/images/placeholder.jpg'}
                                 alt={project.title}
                                 sx={{ objectFit: 'cover' }}
@@ -263,10 +263,16 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                                     src={image}
                                     alt={`${project.title} image ${imgIndex + 2}`}
                                     sx={{
-                                      height: 80,
-                                      mr: 1,
+                                      height: 120,
+                                      mr: 2,
                                       borderRadius: 1,
                                       cursor: 'pointer',
+                                      boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+                                      transition: 'all 0.3s ease',
+                                      '&:hover': {
+                                        transform: 'translateY(-3px)',
+                                        boxShadow: '0 5px 10px rgba(0,0,0,0.2)',
+                                      }
                                     }}
                                   />
                                 </motion.div>
@@ -276,7 +282,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                         </Box>
                       </Grid>
 
-                      <Grid item xs={12} md={6} sx={{ p: 3, pt: { xs: 2, md: 0 } }}>
+                      <Grid item xs={12} md={5} sx={{ p: 3, pt: { xs: 2, md: 0 } }}>
                         <motion.div
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
@@ -373,14 +379,20 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <Box sx={{ p: 3, pt: 0 }}>
-                          <Card elevation={1}>
+                        <Box sx={{ p: 4, pt: 2 }}>
+                          <Card elevation={2} sx={{ borderRadius: 2, overflow: 'hidden', boxShadow: '0 8px 30px rgba(0,0,0,0.12)' }}>
                             <Box
                               component="video"
                               src={project.videoUrl}
                               controls
+                              autoPlay
                               width="100%"
-                              sx={{ display: 'block' }}
+                              sx={{ 
+                                display: 'block',
+                                minHeight: { xs: '300px', md: '500px' },
+                                objectFit: 'contain',
+                                backgroundColor: '#000',
+                              }}
                             />
                           </Card>
                         </Box>

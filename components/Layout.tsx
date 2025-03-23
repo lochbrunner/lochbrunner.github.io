@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
         transition={{ duration: 0.5 }}
         style={{ flexGrow: 1 }}
       >
-        <Container maxWidth="lg" sx={{ py: 4 }}>
+        <Container maxWidth="xl" sx={{ py: 4 }}>
           {children}
         </Container>
       </motion.main>

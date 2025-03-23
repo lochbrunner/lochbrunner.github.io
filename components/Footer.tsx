@@ -1,11 +1,6 @@
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import IconButton from '@mui/material/IconButton';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -39,41 +34,9 @@ const Footer = () => {
             <Typography variant="body2" color="text.secondary">
               © {new Date().getFullYear()} My Portfolio. All rights reserved.
             </Typography>
-            <Box sx={{ display: 'flex', mt: { xs: 2, sm: 0 } }}>
-              <IconButton
-                aria-label="GitHub"
-                component={Link}
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                sx={{ '&:hover': { color: 'primary.main' } }}
-              >
-                <GitHubIcon />
-              </IconButton>
-              <IconButton
-                aria-label="LinkedIn"
-                component={Link}
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                sx={{ '&:hover': { color: 'primary.main' } }}
-              >
-                <LinkedInIcon />
-              </IconButton>
-              <IconButton
-                aria-label="Twitter"
-                component={Link}
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                sx={{ '&:hover': { color: 'primary.main' } }}
-              >
-                <TwitterIcon />
-              </IconButton>
-            </Box>
+            <Typography variant="body2" color="text.secondary">
+              Built with React, Material UI, and Framer Motion
+            </Typography>
           </Box>
         </motion.div>
       </Container>
