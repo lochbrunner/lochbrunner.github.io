@@ -51,15 +51,16 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
         <Box
           sx={{
             position: 'relative',
+            paddingTop: 2,
             '&::before': {
               content: '""',
               position: 'absolute',
               top: 0,
               bottom: 0,
-              left: { xs: '50%', md: 'calc(50% - 1px)' },
+              left: 'calc(50% - 8px)',  // Adjusted to align with the new dot position
               width: '2px',
-              backgroundColor: theme.palette.divider,
-              transform: 'translateX(-50%)',
+              backgroundColor: 'primary.light',
+              opacity: 0.6,
               zIndex: 0,
             },
           }}
@@ -92,46 +93,65 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                 }}
                 id={`project-${project.id}`}
               >
-                {/* Timeline dot */}
-                <motion.div
-                  initial={{ scale: 0, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  transition={{ 
-                    duration: 0.5, 
-                    delay: 0.3,
-                    type: "spring",
-                    stiffness: 300,
-                    damping: 15
+                {/* Project title and timeline dot in a container */}
+                <Box
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    mb: 4,
+                    position: 'relative',
+                    py: 1,
+                    px: 2,
+                    borderRadius: 2,
+                    backgroundColor: 'background.paper',
+                    boxShadow: 1,
+                    zIndex: 3, // Ensure it's above the timeline
+                    maxWidth: 'fit-content',
+                    mx: 'auto',
                   }}
-                  viewport={{ once: true }}
                 >
-                  <Box
-                    sx={{
-                      width: 20,
-                      height: 20,
-                      borderRadius: '50%',
-                      backgroundColor: 'primary.main',
-                      position: 'absolute',
-                      top: 0,
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      zIndex: 2,
-                      boxShadow: 3,
-                      border: `3px solid ${theme.palette.background.default}`,
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ 
+                      duration: 0.5, 
+                      delay: 0.3,
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 15
                     }}
-                  />
-                </motion.div>
+                    viewport={{ once: true }}
+                    style={{ marginRight: '10px' }}
+                  >
+                    <Box
+                      sx={{
+                        width: 16,
+                        height: 16,
+                        borderRadius: '50%',
+                        backgroundColor: 'primary.main',
+                        boxShadow: 2,
+                        border: `2px solid ${theme.palette.background.default}`,
+                      }}
+                    />
+                  </motion.div>
 
-                {/* Project title */}
-                <Typography 
-                  variant="subtitle1" 
-                  color="primary" 
-                  fontWeight="bold"
-                  align="center"
-                  sx={{ mb: 4 }}
-                >
-                  {index === 0 ? 'Latest Project' : `Project ${index + 1}`}
-                </Typography>
+                  {/* Project title */}
+                  <motion.div
+                    initial={{ opacity: 0, x: -5 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    viewport={{ once: true }}
+                  >
+                    <Typography 
+                      variant="subtitle1" 
+                      color="primary" 
+                      fontWeight="bold"
+                    >
+                      {index === 0 ? 'Latest Project' : `Project ${index + 1}`}
+                    </Typography>
+                  </motion.div>
+                </Box>
 
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
