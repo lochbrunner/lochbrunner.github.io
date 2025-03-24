@@ -32,7 +32,7 @@ const Footer = () => {
             }}
           >
             <Typography variant="body2" color="text.secondary">
-              © {new Date().getFullYear()} My Portfolio. All rights reserved.
+              © {new Date().getFullYear()} Matthias Lochbrunner. All rights reserved.
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Built with React, Material UI, and Framer Motion

@@ -50,19 +50,19 @@ const HeroSection = () => {
     // Use pre-defined values for server-side rendering
     let width = 1000;
     let height = 600;
-    
+
     // Get window dimensions if in the browser
     if (isMounted && typeof window !== 'undefined') {
       width = window.innerWidth;
       height = window.innerHeight;
     }
-    
+
     // Create deterministic random values based on the index
     const randomX = (Math.sin(index * 10) * 0.5 + 0.5) * width;
     const randomY = (Math.cos(index * 10) * 0.5 + 0.5) * height;
     const randomScale = 0.5 + (Math.sin(index * 5) * 0.5 + 0.5);
     const randomOpacity = 0.3 + (Math.cos(index * 8) * 0.5 + 0.5) * 0.7;
-    
+
     return {
       x: randomX,
       y: randomY,
@@ -104,21 +104,21 @@ const HeroSection = () => {
         {[...Array(5)].map((_, i) => {
           // Get random positions
           const random = generateRandomPositions(i);
-          
+
           return (
             <motion.div
               key={i}
               initial={{ opacity: 0, scale: 0, x: Math.random() * 100 - 50, y: Math.random() * 100 - 50 }}
-              animate={{ 
-                opacity: random.opacity, 
+              animate={{
+                opacity: random.opacity,
                 scale: random.scale,
                 x: random.x,
                 y: random.y
               }}
-              transition={{ 
-                duration: random.duration, 
-                repeat: Infinity, 
-                repeatType: "reverse" 
+              transition={{
+                duration: random.duration,
+                repeat: Infinity,
+                repeatType: "reverse"
               }}
               style={{
                 position: 'absolute',
@@ -151,7 +151,7 @@ const HeroSection = () => {
                   WELCOME TO MY PORTFOLIO
                 </Typography>
               </motion.div>
-              
+
               <motion.div
                 custom={2}
                 initial="hidden"
@@ -162,8 +162,8 @@ const HeroSection = () => {
                   variant="h2"
                   component="h1"
                   gutterBottom
-                  sx={{ 
-                    fontWeight: 800, 
+                  sx={{
+                    fontWeight: 800,
                     fontSize: { xs: '2.5rem', md: '4rem' },
                     background: `linear-gradient(90deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
                     backgroundClip: 'text',
@@ -173,10 +173,10 @@ const HeroSection = () => {
                     textShadow: '0px 2px 5px rgba(0,0,0,0.1)',
                   }}
                 >
-                  Your Name
+                  Matthias Lochbrunner
                 </Typography>
               </motion.div>
-              
+
               <motion.div
                 custom={3}
                 initial="hidden"
@@ -185,13 +185,13 @@ const HeroSection = () => {
               >
                 <Typography
                   variant="h5"
-                  sx={{ 
+                  sx={{
                     mb: 1,
                     fontWeight: 700,
                     color: theme.palette.primary.main
                   }}
                 >
-                  Software Developer & Designer
+                  Research Engineer
                 </Typography>
               </motion.div>
 
@@ -223,10 +223,10 @@ const HeroSection = () => {
                       variant="contained"
                       size="large"
                       href="#projects"
-                      sx={{ 
-                        textTransform: 'none', 
-                        px: 4, 
-                        py: 1.5, 
+                      sx={{
+                        textTransform: 'none',
+                        px: 4,
+                        py: 1.5,
                         borderRadius: 8,
                         fontWeight: 'bold',
                         boxShadow: '0 6px 15px rgba(33, 150, 243, 0.3)',
@@ -244,10 +244,10 @@ const HeroSection = () => {
                       variant="outlined"
                       size="large"
                       href="#contact"
-                      sx={{ 
-                        textTransform: 'none', 
-                        px: 4, 
-                        py: 1.5, 
+                      sx={{
+                        textTransform: 'none',
+                        px: 4,
+                        py: 1.5,
                         borderRadius: 8,
                         fontWeight: 'bold',
                       }}
@@ -266,7 +266,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                style={{ 
+                style={{
                   position: 'absolute',
                   top: '50%',
                   left: '50%',
@@ -351,13 +351,13 @@ const HeroSection = () => {
         </Grid>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ 
+          animate={{
             opacity: [0, 1, 0.5, 1],
             y: [20, 0, 5, 0]
           }}
-          transition={{ 
-            duration: 2, 
-            delay: 1.5, 
+          transition={{
+            duration: 2,
+            delay: 1.5,
             repeat: Infinity,
             repeatDelay: 1
           }}

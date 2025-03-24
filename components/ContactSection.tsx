@@ -15,33 +15,33 @@ import { motion } from 'framer-motion';
 
 const ContactSection = () => {
   const contactLinks = [
-    { 
-      icon: <EmailIcon />, 
-      text: 'email@example.com', 
-      link: 'mailto:email@example.com',
+    {
+      icon: <EmailIcon />,
+      text: 'matthias_lochbrunner@web.de',
+      link: 'mailto:matthias_lochbrunner@web.de',
       label: 'Email'
     },
-    { 
-      icon: <GitHubIcon />, 
-      text: 'GitHub Profile', 
-      link: 'https://github.com/yourusername',
+    {
+      icon: <GitHubIcon />,
+      text: 'GitHub Profile',
+      link: 'https://github.com/lochbrunner',
       label: 'GitHub'
     },
-    { 
-      icon: <LinkedInIcon />, 
-      text: 'LinkedIn', 
-      link: 'https://linkedin.com/in/yourusername',
+    {
+      icon: <LinkedInIcon />,
+      text: 'LinkedIn',
+      link: 'https:www.linkedin.com/in/matthias-lochbrunner-b8412711b',
       label: 'LinkedIn'
     },
-    { 
-      icon: <WorkIcon />, 
-      text: 'Google DeepMind', 
+    {
+      icon: <WorkIcon />,
+      text: 'Google DeepMind',
       link: 'https://deepmind.google/',
       label: 'Current Employer'
     },
-    { 
-      icon: <LocationOnIcon />, 
-      text: 'San Francisco, CA', 
+    {
+      icon: <LocationOnIcon />,
+      text: 'London, UK',
       link: undefined,
       label: 'Location'
     },
@@ -120,10 +120,10 @@ const ContactSection = () => {
                       {item.label}
                     </Typography>
                     {item.link ? (
-                      <Link 
-                        href={item.link} 
-                        underline="hover" 
-                        color="inherit" 
+                      <Link
+                        href={item.link}
+                        underline="hover"
+                        color="inherit"
                         target={item.link.startsWith('mailto') ? undefined : "_blank"}
                         rel="noopener noreferrer"
                         variant="body1"
