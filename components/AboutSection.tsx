@@ -8,18 +8,14 @@ import Paper from '@mui/material/Paper';
 import { motion } from 'framer-motion';
 
 const skills = [
-  'React', 
-  'TypeScript', 
-  'Node.js', 
-  'Material UI', 
-  'Next.js',
-  'GraphQL',
-  'MongoDB',
-  'AWS',
-  'Docker',
-  'Git',
-  'Figma',
-  'Jest'
+  'Multimodal LLMs',
+  'RLxF',
+  'Large Distributed Systems',
+  'TypeScript',
+  'Pathways',
+  'Jax',
+  'Python',
+  'C++',
 ];
 
 const AboutSection = () => {
@@ -66,16 +62,15 @@ const AboutSection = () => {
                 About Me
               </Typography>
               <Typography variant="body1" paragraph sx={{ mb: 3 }}>
-                I'm a passionate software developer with expertise in creating modern web and mobile applications. 
-                With over 5 years of experience in the industry, I've had the opportunity to work on diverse projects, 
-                from small startups to enterprise applications, helping businesses solve real-world problems through technology.
+                As a Research Engineer at Google DeepMind, I contribute to the Gemini Thinking project.
+                My work leverages strong engineering and software design skills to tackle cutting-edge research questions, aiming to push the boundaries of Gemini's capabilities.
               </Typography>
               <Typography variant="body1" paragraph>
-                My approach combines clean code principles with user-centered design, ensuring that the applications 
-                I build are not only technically sound but also intuitive and enjoyable to use. I'm constantly learning 
-                and staying updated with the latest technologies and best practices in the field.
+                My approach as a Research Engineer involves balancing the need for high-quality, maintainable code in large systems with the agility required for rapid research prototyping.
+                I'm an effective communicator and perform best in collaborative, cutting-edge environments.
+                I have a strong aptitude for quickly mastering new frameworks and complex codebases, and I proactively seek opportunities to enhance system performance and stability.
               </Typography>
-              
+
               <Typography variant="h5" gutterBottom sx={{ mt: 4, mb: 2 }}>
                 Skills & Technologies
               </Typography>
@@ -103,9 +98,9 @@ const AboutSection = () => {
 
         <Grid container spacing={4} sx={{ mt: 6 }}>
           {[
-            { title: 'Education', content: 'Bachelor of Science in Computer Science', place: 'University Name, 2015-2019' },
-            { title: 'Experience', content: 'Senior Software Engineer', place: 'Company Name, 2019-Present' },
-            { title: 'Location', content: 'San Francisco, CA', place: 'Available for remote work' },
+            { title: 'Education', content: 'Master of Science in Physics', place: 'Technical University of Munich' },
+            { title: 'Experience', content: 'Research Engineer', place: 'Google DeepMind' },
+            { title: 'Location', content: 'London, UK', place: '' },
           ].map((item, index) => (
             <Grid item xs={12} md={4} key={index}>
               <motion.div

@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description:
       'This project is a web-based SVG editor that is currently simple and easy to use. Due to the versatility of the SVG image format, an interactive UI was created using Material UI and Redux. Future animation features will allow users to build sophisticated presentations directly in their browsers without the need to install additional software.',
     technologies: ['TypeScript', 'React', 'Redux', 'Material UI'],
-    images: ['https://media.githubusercontent.com/media/lochbrunner/lochbrunner.github.io/master/assets/present.io.fast.gif'],
+    images: ['/images/present.io.fast.gif'],
     liveUrl: 'https://lochbrunner.github.io/present.io',
     githubUrl: 'https://github.com/lochbrunner/present.io',
     featured: false,
