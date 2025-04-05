@@ -18,6 +18,7 @@ import { motion } from 'framer-motion';
 
 interface HeaderProps {
   window?: () => Window;
+  children?: React.ReactElement;
 }
 
 const navigationItems = ['Home', 'Projects', 'About', 'Contact'];
@@ -30,7 +31,7 @@ const HideOnScroll = (props: HeaderProps) => {
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
-      {children}
+      {children || <div />}
     </Slide>
   );
 };

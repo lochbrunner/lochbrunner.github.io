@@ -55,12 +55,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       >
         <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
           <Box sx={{ position: 'relative' }}>
-            <CardMedia
-              component="img"
-              height="200"
-              image={project.images[0] || '/images/placeholder.jpg'}
-              alt={project.title}
-            />
             {project.videoUrl && (
               <IconButton
                 aria-label="play video"
@@ -230,6 +224,15 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               controls
               autoPlay
               sx={{ width: '100%', display: 'block' }}
+            />
+          )}
+          {project.youtubeUrl && (
+            <Box
+              component="iframe"
+              src={project.youtubeUrl}
+              frameBorder="0"
+              allowFullScreen
+              sx={{ width: '100%', height: '500px', display: 'block' }}
             />
           )}
         </DialogContent>

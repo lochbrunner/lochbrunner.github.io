@@ -5,6 +5,7 @@ export interface Project {
   technologies: string[];
   images: string[];
   videoUrl?: string;
+  youtubeUrl?: string;
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;

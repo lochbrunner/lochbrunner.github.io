@@ -276,7 +276,7 @@ const HeroSection = () => {
               >
                 <Box
                   component="img"
-                  src="/images/hero-image.svg"
+                  src="/images/Google_Gemini_logo.svg"
                   alt="Developer illustration"
                   sx={{
                     width: { xs: 220, md: 320 },
@@ -296,11 +296,20 @@ const HeroSection = () => {
                   zIndex: 2,
                   background: theme.palette.background.paper,
                   borderRadius: '50%',
-                  padding: '15px',
+                  padding: '2px',
                   boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
                 }}
               >
-                <CodeIcon fontSize="large" color="primary" />
+                <Box
+                  component="img"
+                  src="/images/Google_Gemini_logo_small.svg"
+                  alt="Developer illustration"
+                  sx={{
+                    width: { xs: 220, md: 120 },
+                    height: 'auto',
+                    filter: 'drop-shadow(0px 10px 15px rgba(0,0,0,0.1))',
+                  }}
+                />
               </motion.div>
 
               <motion.div
@@ -318,11 +327,20 @@ const HeroSection = () => {
                   zIndex: 2,
                   background: theme.palette.background.paper,
                   borderRadius: '50%',
-                  padding: '15px',
+                  padding: '2px',
                   boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
                 }}
               >
-                <DevicesIcon fontSize="large" color="secondary" />
+                <Box
+                  component="img"
+                  src="/images/Google_Gemini_logo_small.svg"
+                  alt="Developer illustration"
+                  sx={{
+                    width: { xs: 220, md: 80 },
+                    height: 'auto',
+                    filter: 'drop-shadow(0px 10px 15px rgba(0,0,0,0.1))',
+                  }}
+                />
               </motion.div>
 
               <motion.div
@@ -344,7 +362,16 @@ const HeroSection = () => {
                   boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
                 }}
               >
-                <WebIcon fontSize="large" color="primary" />
+                <Box
+                  component="img"
+                  src="/images/Google_Gemini_logo_small.svg"
+                  alt="Developer illustration"
+                  sx={{
+                    width: { xs: 220, md: 80 },
+                    height: 'auto',
+                    filter: 'drop-shadow(0px 10px 15px rgba(0,0,0,0.1))',
+                  }}
+                />
               </motion.div>
             </Box>
           </Grid>

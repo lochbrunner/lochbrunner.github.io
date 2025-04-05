@@ -8,7 +8,8 @@ export const projects: Project[] = [
     description:
       'Symbolic reasoning has gained significant attention recently. A new method, which uses rule applications in an RL setup, could lead to a dependable and strong algebra system by solving a critical challenge in the field. In school, we learn basic algebraic rules to solve simple problems.These rules provide us with various paths to find the solution.',
     technologies: ['PyTorch', 'Python', 'Rust', 'C++', 'CUDA'],
-    images: ['/images/symbolic-reasoning.gif'],
+    // images: ['/images/symbolic-reasoning.gif'],
+    images: ['https://media.githubusercontent.com/media/lochbrunner/lochbrunner.github.io/master/assets/symbolic-reasoning.gif'],
     // videoUrl: 'https://example.com/videos/ecommerce-demo.mp4',
     githubUrl: 'https://github.com/lochbrunner/symbolic-reasoning',
     featured: true,
@@ -51,7 +52,7 @@ export const projects: Project[] = [
     description: 'This VS Code extension displays interactive graphs directly within the editor.  A Rust module loads graph data from a binary file due to the project\'s core elements being written in Rust.The extension utilizes Javascript bindings to interact with the file and maintains a graph index in an SQLite database.A master- detail architecture with infinity scroll allows users to query and visualize specific graphs within VS Code by right - clicking on the file.',
     technologies: ['TypeScript', 'Rust', 'SQLite'],
     images: [],
-    // youtubeUrl: 'https://www.youtube.com/embed/TJ5P_vkUihw',
+    youtubeUrl: 'https://www.youtube.com/embed/TJ5P_vkUihw',
     featured: false,
   },
   {
@@ -61,7 +62,7 @@ export const projects: Project[] = [
     technologies: ['TypeScript', 'C++'],
     images: [],
     githubUrl: 'https://github.com/lochbrunner/charlie',
-    // youtubeUrl: 'https://www.youtube.com/embed/bC8TMuqG-oE',
+    youtubeUrl: 'https://www.youtube.com/embed/bC8TMuqG-oE',
     featured: false,
   },
   {
@@ -70,7 +71,7 @@ export const projects: Project[] = [
     description: 'I have experience in building both hardware and software for robotics and physics simulations. I\'ve also developed 3D modeling and rendering software, as well as an online platform for LaTeX document storage and semantic linking.Additionally I have utilized GPUs for large - scale physical field calculations.',
     technologies: ['C++', 'CUDA', 'OpenGL', 'LaTeX', 'Direct3d', 'Win32 API', 'JAX', 'Java', 'Prolog', 'Lua', 'Go', 'Blender', 'Maya', 'Matlab', 'Fortran', 'Mathematica'],
     images: [],
-    // youtubeUrl: 'https://www.youtube.com/embed/wWIqVlIU-r8',
+    youtubeUrl: 'https://www.youtube.com/embed/wWIqVlIU-r8',
     featured: false,
   }
 ];

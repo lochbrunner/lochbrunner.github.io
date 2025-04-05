@@ -68,24 +68,24 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ 
-                opacity: 0, 
+              initial={{
+                opacity: 0,
                 y: 100,
                 scale: 0.9
               }}
-              whileInView={{ 
+              whileInView={{
                 opacity: 1,
                 y: 0,
                 scale: 1
               }}
-              transition={{ 
-                duration: 0.8, 
+              transition={{
+                duration: 0.8,
                 ease: [0.22, 1, 0.36, 1],
               }}
               viewport={{ once: true, margin: '-50px', amount: 0.3 }}
             >
-              <Box 
-                sx={{ 
+              <Box
+                sx={{
                   mb: 12,
                   scrollMarginTop: '80px',
                   position: 'relative',
@@ -114,8 +114,8 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                   <motion.div
                     initial={{ scale: 0, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
-                    transition={{ 
-                      duration: 0.5, 
+                    transition={{
+                      duration: 0.5,
                       delay: 0.3,
                       type: "spring",
                       stiffness: 300,
@@ -143,9 +143,9 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     viewport={{ once: true }}
                   >
-                    <Typography 
-                      variant="subtitle1" 
-                      color="primary" 
+                    <Typography
+                      variant="subtitle1"
+                      color="primary"
                       fontWeight="bold"
                     >
                       {index === 0 ? 'Latest Project' : `Project ${index + 1}`}
@@ -156,10 +156,10 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ 
-                    duration: 0.5, 
+                  transition={{
+                    duration: 0.5,
                     delay: 0.2,
-                    ease: "easeOut" 
+                    ease: "easeOut"
                   }}
                   viewport={{ once: true }}
                 >
@@ -194,23 +194,23 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                           <motion.div
                             initial={{ opacity: 0, scale: 0.95, y: 10 }}
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                            transition={{ 
-                              duration: 0.6, 
+                            transition={{
+                              duration: 0.6,
                               delay: 0.3,
-                              ease: "easeOut" 
+                              ease: "easeOut"
                             }}
                             viewport={{ once: true }}
                           >
-                            <Card 
-                              elevation={2} 
-                              sx={{ 
+                            <Card
+                              elevation={2}
+                              sx={{
                                 borderRadius: 3,
                                 overflow: 'hidden',
                               }}
                             >
                               <CardMedia
                                 component="img"
-                                height="400"
+                                height="auto"
                                 image={project.images[0] || '/images/placeholder.jpg'}
                                 alt={project.title}
                                 sx={{ objectFit: 'cover' }}
@@ -234,13 +234,13 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                               )}
                             </Card>
                           </motion.div>
-                          
+
                           {/* Additional project images in a horizontal scroll */}
                           {project.images.length > 1 && (
-                            <Box 
-                              sx={{ 
-                                display: 'flex', 
-                                mt: 2, 
+                            <Box
+                              sx={{
+                                display: 'flex',
+                                mt: 2,
                                 overflowX: 'auto',
                                 '&::-webkit-scrollbar': {
                                   height: 6,
@@ -292,7 +292,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                           <Typography variant="body1" paragraph>
                             {project.description}
                           </Typography>
-                          
+
                           <Typography variant="subtitle2" gutterBottom sx={{ mt: 2 }}>
                             Technologies Used:
                           </Typography>
@@ -303,10 +303,10 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                               key={tech}
                               initial={{ opacity: 0, y: 10, scale: 0.9 }}
                               whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                              transition={{ 
-                                duration: 0.4, 
+                              transition={{
+                                duration: 0.4,
                                 delay: 0.3 + (techIndex * 0.05),
-                                ease: "easeOut" 
+                                ease: "easeOut"
                               }}
                               viewport={{ once: true }}
                             >
@@ -320,7 +320,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                             </motion.div>
                           ))}
                         </Box>
-                        
+
                         <motion.div
                           initial={{ opacity: 0, y: 20 }}
                           whileInView={{ opacity: 1, y: 0 }}
@@ -329,8 +329,8 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                         >
                           <Box sx={{ display: 'flex', gap: 2, mt: 4 }}>
                             {project.liveUrl && (
-                              <motion.div 
-                                whileHover={{ scale: 1.05 }} 
+                              <motion.div
+                                whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.2 }}
                               >
@@ -348,8 +348,8 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                               </motion.div>
                             )}
                             {project.githubUrl && (
-                              <motion.div 
-                                whileHover={{ scale: 1.05 }} 
+                              <motion.div
+                                whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.2 }}
                               >
@@ -370,7 +370,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                         </motion.div>
                       </Grid>
                     </Grid>
-                    
+
                     {/* Video section that expands when clicked */}
                     {project.videoUrl && expandedVideo === project.id && (
                       <motion.div
@@ -387,7 +387,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
                               controls
                               autoPlay
                               width="100%"
-                              sx={{ 
+                              sx={{
                                 display: 'block',
                                 minHeight: { xs: '300px', md: '500px' },
                                 objectFit: 'contain',
