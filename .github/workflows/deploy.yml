@@ -35,10 +35,9 @@ jobs:
       - name: Build with Next.js
         run: npm run build
       
-      - name: Configure Next.js for static export
+      - name: Skip redundant export configuration
         run: |
-          echo "{ \"output\": \"export\" }" > next.config.js
-          npm run build
+          echo "Next.js is already configured for static export in next.config.js"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
