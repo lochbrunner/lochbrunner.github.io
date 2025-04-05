@@ -9,7 +9,7 @@ export const projects: Project[] = [
       'Symbolic reasoning has gained significant attention recently. A new method, which uses rule applications in an RL setup, could lead to a dependable and strong algebra system by solving a critical challenge in the field. In school, we learn basic algebraic rules to solve simple problems.These rules provide us with various paths to find the solution.',
     technologies: ['PyTorch', 'Python', 'Rust', 'C++', 'CUDA'],
     // images: ['/images/symbolic-reasoning.gif'],
-    images: ['https://media.githubusercontent.com/media/lochbrunner/lochbrunner.github.io/master/assets/symbolic-reasoning.gif'],
+    images: ['/images/symbolic-reasoning.gif'],
     // videoUrl: 'https://example.com/videos/ecommerce-demo.mp4',
     githubUrl: 'https://github.com/lochbrunner/symbolic-reasoning',
     featured: true,
