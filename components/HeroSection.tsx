@@ -202,8 +202,8 @@ const HeroSection = () => {
                 variants={textVariants}
               >
                 <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4, maxWidth: '90%' }}>
-                  A passionate developer creating innovative solutions with modern technologies.
-                  Specializing in web applications, mobile development, and user experience design.
+                  As a Research Engineer at Google DeepMind contributing to the Gemini Thinking project,
+                  I conduct cutting-edge research and push the limits of Gemini's reasoning and coding capabilities.
                 </Typography>
               </motion.div>
 

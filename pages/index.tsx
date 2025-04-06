@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Portfolio - Developer & Designer</title>
+        <title>Matthias Lochbrunner</title>
         <meta name="description" content="Personal portfolio website showcasing my projects and skills as a developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
