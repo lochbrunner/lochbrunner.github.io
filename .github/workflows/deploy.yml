@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -39,6 +41,9 @@ jobs:
         run: |
           echo "Next.js is already configured for static export in next.config.js"
       
+      - name: Copy chop page
+        run: cp -r ./chop ./out
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
