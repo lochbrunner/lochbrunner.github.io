@@ -3,15 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # or main branch
+      - master
 
-# Sets permissions of the GITHUB_TOKEN
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -24,31 +22,38 @@ jobs:
         uses: actions/checkout@v4
         with:
           lfs: true
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      
+
+      # Build the legacy Next.js site first (its out/ is needed by the main build)
+      - name: Install legacy dependencies
+        run: cd legacy && npm ci
+
+      - name: Build legacy site
+        run: cd legacy && npm run build
+
+      # Build the new Vite site (vite-plugin-static-copy bundles chop/ automatically)
       - name: Install dependencies
         run: npm ci
-      
-      - name: Build with Next.js
+
+      - name: Build new site
         run: npm run build
-      
-      - name: Skip redundant export configuration
+
+      # Copy legacy output into the final bundle
+      - name: Copy legacy build to output
         run: |
-          echo "Next.js is already configured for static export in next.config.js"
-      
-      - name: Copy chop page
-        run: cp -r ./chop ./out
+          mkdir -p out/legacy
+          cp -r legacy/out/* out/legacy/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-  
+
   deploy:
     environment:
       name: github-pages

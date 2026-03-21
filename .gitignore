@@ -1,7 +1,6 @@
 node_modules/
-.next/
 out/
-build/
+dist/
 .DS_Store
 *.pem
 npm-debug.log*
@@ -11,3 +10,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Legacy Next.js build artifacts
+legacy/.next/
+legacy/out/
+legacy/node_modules/

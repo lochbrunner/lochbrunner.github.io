@@ -1,0 +1,167 @@
+about:
+  name: Matthias Lochbrunner
+  title: Research Engineer
+  affiliation: Google DeepMind
+  # tagline: Building intelligent systems that push the boundaries of AI capabilities.
+  # bio: >
+  #   I am a Research Engineer at Google DeepMind working on advancing reasoning capabilities of Gemini.
+  #   With a background in Physics and Mathematics, I have a strong foundation in both theoretical and applied aspects of machine learning and software development.
+  
+  #   My work focuses on developing novel methods for improving the reasoning and coding capabilities of large language models.
+  #   I am passionate about creating technologies that empower developers and researchers to solve complex problems more effectively.
+  tagline: Executing the next generation of Gemini reasoning systems.
+  bio: >
+      I am a Research Engineer at Google DeepMind on the Gemini team, where I focus on improving reasoning and coding capabilities.
+      I have a proven track record of translating complex research ideas into robust, workable implementations.
+
+      My background combines the rigor of theoretical physics with over a decade of hands-on coding experience.
+      Whether it was developing perception stacks for self-driving cars or scaling agentic frameworks for Gemini, my work is centered on execution.
+      I bring the mathematical depth to understand "why" and the engineering precision to deliver "how."
+
+research_interests:
+  - Machine Learning
+  - Symbolic Reasoning
+  - Reinforcement Learning
+  - Compiler Design
+  - Neural Network Architecture
+
+links:
+  github: https://github.com/lochbrunner
+  google_scholar: https://scholar.google.com/citations?user=9D-JD2QAAAAJ&hl=en&oi=ao
+  linkedin: https://www.linkedin.com/in/matthias-lochbrunner-b8412711b
+  # email: your.email@example.com
+  # twitter: https://twitter.com/your_handle
+
+publications:
+  - title: "Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities"
+    authors: "G. Comanici, E. Bieber, M. Schaekermann, I. Pasupat, N. Sachdeva, I. Dhillon, M. Blistein, O. Ram, D. Zhang, E. Rosen, ... M. Lochbrunner, et al."
+    venue: "arXiv preprint arXiv:2507.06261, 2025"
+    year: 2025
+    url: https://arxiv.org/abs/2507.06261
+
+  - title: "Improving cosmological reach of a gravitational wave observatory using Deep Loop Shaping"
+    authors: "J. Buchli, B. Tracey, T. Andric, C. Wipf, Y.H.J. Chiu, M. Lochbrunner, C. Donner, R.X. Adhikari, J. Harms, I. Barr, et al."
+    venue: "Science, 2025"
+    year: 2025
+    url: https://www.science.org/doi/abs/10.1126/science.adw1291
+
+  - title: "TORBEAM 2.0, a paraxial beam tracing code for electron-cyclotron beams in fusion plasmas for extended physics applications"
+    authors: "E. Poli, A. Bock, M. Lochbrunner, O. Maj, M. Reich, A. Snicker, A. Stegmeir, F. Volpe, N. Bertelli, R. Bilato, et al."
+    venue: "Computer Physics Communications, 2018"
+    year: 2018
+    url: https://www.sciencedirect.com/science/article/pii/S001046551730423X
+
+  - title: "Real-time control of NTMs using ECCD at ASDEX Upgrade"
+    authors: "M. Reich, L. Barrera, K. Behler, A. Buhler, A. Bock, H. Eixenberger, S. Fietz, et al."
+    venue: "Proc. of the 25th IAEA Fusion Energy Conference, St. Petersburg, 2014"
+    year: 2014
+    url: https://www.academia.edu/download/100958919/430_PPCP126.pdf
+
+  - title: "AlphaCode 2 technical report"
+    authors: "R. Leblond, F. Gimeno, F. Altché, A. Saade, A. Ruddock, C. Tallec, G. Powell, J.B. Grill, M. Mikuła, M. Lochbrunner, et al."
+    venue: "DeepMind Technical Report, 2023"
+    year: 2023
+    url: https://storage.googleapis.com/deepmind-media/AlphaCode2/AlphaCode2_Tech_Report.pdf
+
+  - title: "Computer code generation from task descriptions using neural networks"
+    authors: "R. Leblond, A. Saade, C. Tallec, F.A.G. Gil, F. Altché, J.B.F.L. Grill, M.H. Lochbrunner, P. Caron, A. Ruddock, G. Powell, et al."
+    venue: "US Patent App. 18/970,673, 2025"
+    year: 2025
+    url: https://patents.google.com/patent/US20250181325A1/en
+
+
+projects:
+  - id: "2024"
+    title: Chop Language Compiler
+    description: >
+      A compiler for the novel programming language Chop, which combines the expressivity
+      of Scala with the performance of C and security features of Rust.
+    technologies:
+      - Rust
+      - WebAssembly
+      - Claude Code
+    live_url: /chop
+    featured: false
+
+  - id: "2021"
+    title: Rule based Symbolic Reasoning
+    description: >
+      Symbolic reasoning has gained significant attention recently.
+      A new method, which uses rule applications in an RL setup,
+      could lead to a dependable and strong algebra system by solving
+      a critical challenge in the field. In school, we learn basic algebraic
+      rules to solve simple problems. These rules provide us with various
+      paths to find the solution.
+    technologies:
+      - PyTorch
+      - Python
+      - Rust
+      - C++
+      - CUDA
+    images:
+      - /images/symbolic-reasoning.gif
+    github_url: https://github.com/lochbrunner/symbolic-reasoning
+    featured: true
+
+  - id: "2018"
+    title: Editor for Neural Network Architectures
+    description: >
+      An online platform where users can design, train, and share AI models.
+      The platform features a no-code editor that allows users to design
+      network architecture and visualize hidden neuron states live on a canvas.
+    technologies:
+      - TypeScript
+      - React
+      - Redux
+      - TensorFlow.js
+    images:
+      - https://raw.githubusercontent.com/lochbrunner/open-go-bot/master/docs/assets/mnist/mnist.gif
+    live_url: https://lochbrunner.github.io/demos/social-ai/#/scenario/mnist
+    github_url: https://lochbrunner.github.io/demos/social-ai/#/scenario/mnist
+    featured: false
+
+  - id: "2018"
+    title: Charlie Debugger
+    description: >
+      This project encompasses the development of a compiler, interpreter,
+      and VS Code debug adapter for the Charlie programming language, a subset of C.
+      All components, with the exception of the VS Code extension, are built from
+      the ground up without the use of external libraries, serving an educational purpose.
+      The compiler's function is to parse source code and generate corresponding byte-code.
+      Subsequently, the interpreter reads the byte-code and can initiate a TCP socket
+      connection for the VS Code debugging extension.
+    technologies:
+      - TypeScript
+      - C++
+    images: []
+    github_url: https://github.com/lochbrunner/charlie
+    youtube_url: https://www.youtube.com/embed/bC8TMuqG-oE
+    featured: false
+
+  - id: "Pre Graduation"
+    title: Various Independent Projects
+    description: >
+      I have experience in building both hardware and software for robotics
+      and physics simulations. I've also developed 3D modeling and rendering software,
+      as well as an online platform for LaTeX document storage and semantic linking.
+      Additionally I have utilized GPUs for large-scale physical field calculations.
+    technologies:
+      - C++
+      - CUDA
+      - OpenGL
+      - LaTeX
+      - Direct3d
+      - Win32 API
+      - JAX
+      - Java
+      - Prolog
+      - Lua
+      - Go
+      - Blender
+      - Maya
+      - Matlab
+      - Fortran
+      - Mathematica
+    images: []
+    youtube_url: https://www.youtube.com/embed/wWIqVlIU-r8
+    featured: false
